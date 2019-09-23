@@ -1,0 +1,56 @@
+@import 'normalize';
+
+$first: #343037;
+$second: #fff;
+$third: #DC107E;
+$fourth: #3B91E6;
+
+html{
+  color: $first;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+.container{
+  width: 768px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.container_align-right{
+  display: flex;
+  justify-content: flex-end;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Semibold.woff2') format('woff2'),
+      url('fonts/OpenSans-Semibold.woff') format('woff'),
+  url('fonts/OpenSans-Semibold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Extrabold.woff2') format('woff2'),
+  url('fonts/OpenSans-Extrabold.woff') format('woff'),
+      url('fonts/OpenSans-Extrabold.ttf') format('ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans.woff2') format('woff2'),
+      url('fonts/OpenSans.woff') format('woff'),
+  url('fonts/OpenSans.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}

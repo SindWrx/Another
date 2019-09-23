@@ -5,12 +5,8 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
-    link(rel="stylesheet", href="./styles/all.css")
+    link(rel="stylesheet", href="./all.css")
   body
-    h1 Заголовок 1
-    div Block1
-    div Block2
-    div Block3
-    svg(width="50" height="50")
-      use(xlink:href="../images/sprite.svg#arrow-down-sign-to-navigate")
-    script(src="./scripts/all.js")
+    include pages/blog/blog.pug
+
+    script(src="./all.js")

@@ -1,0 +1,53 @@
+%svg-common {
+	background: url("../images/spriteBg.svg") no-repeat;
+}
+
+@mixin case {
+	@extend %svg-common;
+	background-position: 97.20022709940974% 24.43880852719268%;
+	width: 25.333px;
+	height: 22.667px;
+}
+
+@mixin logo {
+	@extend %svg-common;
+	background-position: 0 0;
+	width: 289.333px;
+	height: 289.333px;
+}
+
+@mixin menu {
+	@extend %svg-common;
+	background-position: 96.33739882064243% 40.28776978417266%;
+	width: 22.667px;
+	height: 12px;
+}
+
+@mixin notice {
+	@extend %svg-common;
+	background-position: 96.76688963210704% 33.08270676691729%;
+	width: 24px;
+	height: 24px;
+}
+
+@mixin phone {
+	@extend %svg-common;
+	background-position: 93.63527508090615% 45.09090909090909%;
+	width: 14px;
+	height: 15px;
+}
+
+@mixin play {
+	@extend %svg-common;
+	background-position: 99.88469518447044% 0;
+	width: 33.333px;
+	height: 33.333px;
+}
+
+@mixin smartphone {
+	@extend %svg-common;
+	background-position: 95.4894389438944% 12.919767441860465%;
+	width: 20px;
+	height: 32px;
+}
+

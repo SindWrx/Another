@@ -1,0 +1,101 @@
+@import '../../main';
+
+.aside {
+  position: absolute;
+  left: 0;
+  background-color: $first;
+  height: 1000vh;
+
+  .logo-container {
+    margin-bottom: 50px;
+    margin-left: 14px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+
+  .logo__icon {
+    width: 40px;
+    height: 40px;
+    fill: $second;
+    margin-right: 10px;
+  }
+
+  .logo__text {
+    color: $second;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+.link {
+  color: $second;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20px 25px 20px 20px;
+
+  &:hover {
+    background-color: $third;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $second;
+    margin-right: 20px;
+  }
+
+  &__icon-arrow {
+    width: 10px;
+    height: 10px;
+    fill: $second;
+    position: absolute;
+    right: 20px;
+  }
+
+  &__text {
+    font-size: 13px;
+  }
+}
+
+.button {
+  padding: 20px 25px;
+  color: $second;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__icon-bg {
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    background-color: $third;
+    padding: 5px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  &__icon {
+    width: 10px;
+    height: 10px;
+    fill: $second;
+  }
+}
+
+.item__icon-phone_mr-10 {
+  margin-right: 10px;
+}

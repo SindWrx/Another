@@ -63,14 +63,14 @@ gulp.task('styles', () => {
   }))
   .pipe(cleanCSS({compatibility: 'ie8', level: 2}))
   .pipe(gulpIf(isDevelopment, sourcemaps.write()))
-  .pipe(gulp.dest(conf.dest + '/styles'))
+  .pipe(gulp.dest(conf.dest))
   .pipe(browserSync.stream());
 });
 
 gulp.task('scripts', () => {
-  return gulp.src('./src/scripts/index.js')
+  return gulp.src('./src/main.js')
   .pipe(webpack(webConfig))
-  .pipe(gulp.dest(conf.dest + '/scripts'))
+  .pipe(gulp.dest(conf.dest))
   .pipe(browserSync.stream());
 });
 
@@ -85,18 +85,18 @@ gulp.task('pugs', () => {
 });
 
 gulp.task('images', () => {
-  return gulp.src('./src/images/**/*.*')
+  return gulp.src('./src/resources/images/*.*')
   .pipe(imagemin([
     imagemin.gifsicle({interlaced: true}),
     imagemin.jpegtran({progressive: true}),
     imagemin.optipng({optimizationLevel: 5}),
   ]))
-  .pipe(gulp.dest(conf.dest + '/images'))
+  .pipe(gulp.dest(conf.dest + '/resources/images'))
   .pipe(browserSync.stream());
 });
 
-gulp.task('createSprites', () => {
-  return gulp.src('./src/icons/*.svg')
+gulp.task('createMySprite', () => {
+  return gulp.src('./src/resources/icons/*.svg')
   .pipe(svgmin({
     js2svg: {
       pretty: true
@@ -118,13 +118,23 @@ gulp.task('createSprites', () => {
     mode: {
       symbol: { dest: '.', sprite: '../images/sprite.svg', inline: true },
       css: {
-        dest: '.', prefix: '@mixin %s', sprite: '../images/spriteBg.svg', bust: false, 
+        dest: '.', prefix: '@mixin %s', sprite: '../images/spriteBg.svg', bust: false, dimensions: true,
         render: { scss: { dest: 'sprite.scss' } }
       }
     }
   }))
-  .pipe(gulpIf('*.scss', gulp.dest('./src/styles'), gulp.dest(conf.dest + '/images/')))
+  .pipe(gulpIf('*.scss', gulp.dest('./src'), gulp.dest(conf.dest + '/resources/images/')))
   .pipe(browserSync.stream());
+});
+
+gulp.task('fontawesome', () => {
+  return gulp.src('node_modules/@fortawesome/fontawesome-free/sprites/{brands,solid}.svg')
+      .pipe(gulp.dest(conf.dest+'/resources/images/'));
+});
+
+gulp.task('fonts', () => {
+  return gulp.src('./src/fonts/*.*')
+      .pipe(gulp.dest(conf.dest+'/fonts/'));
 });
 
 /* Запуски/Слежения */
@@ -146,5 +156,5 @@ gulp.task('clean', () => {
   return del([conf.dest + '/*']);
 });
 
-gulp.task('build',  gulp.series('clean', 'createSprites', gulp.parallel('styles', 'scripts', 'pugs', 'images') ));
+gulp.task('build',  gulp.series('clean', 'fontawesome', 'fonts', 'createMySprite', gulp.parallel('styles', 'scripts', 'pugs', 'images') ));
 gulp.task('dev', gulp.series('build', 'watch'));

@@ -1,0 +1,72 @@
+@import '../../../main';
+
+.cityes {
+  color: $second;
+  fill: $second;
+  box-sizing: border-box;
+  background-color: $first;
+
+  &_p-0-20 {
+    padding: 0 20px;
+  }
+
+  &_pl-20 {
+    padding-left: 20px;
+  }
+
+  &_w-300 {
+    width: 250px;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: $first;
+  position: relative;
+
+  span {
+    font-weight: 600;
+  }
+
+  .item__city-name {
+
+    &_m-10 {
+      margin: 0 10px;
+    }
+
+    &_m-20 {
+      margin: 0 20px;
+    }
+
+    &_uppercase {
+      text-transform: uppercase;
+    }
+  }
+
+  .item__arrow {
+    width: 10px;
+    height: 10px;
+
+    &_align-right {
+      position: absolute;
+      right: 20px;
+    }
+  }
+
+  .item__icon-phone {
+    width: 16px;
+    height: 16px;
+  }
+
+  &_flex-end {
+    justify-content: flex-end;
+  }
+}
+
+.item:not(.active) {
+  display: none;
+}

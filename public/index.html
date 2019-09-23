@@ -5,16 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/all.css"/>
+    <link rel="stylesheet" href="./all.css"/>
   </head>
   <body>
-    <h1>Заголовок 1</h1>
-    <div>Block1</div>
-    <div>Block2</div>
-    <div>Block3</div>
-    <svg width="50" height="50">
-      <use xlink:href="../images/sprite.svg#arrow-down-sign-to-navigate"></use>
-    </svg>
-    <script src="./scripts/all.js"></script>
+    <header class="header">
+      <div class="container container_align-right">
+        <div class="cityes cityes_p-0-20 cityes_w-300" id="cityesHorizontal">
+          <div class="item active item_flex-end">
+            <svg class="item__icon-phone">
+              <use xlink:href="./resources/images/sprite.svg#phone"></use>
+            </svg>
+            <p class="item__city-name item__city-name_m-10">Астана <span>696-226</span></p>
+            <svg class="item__arrow">
+              <use xlink:href="./resources/images/solid.svg#chevron-down"></use>
+            </svg>
+          </div>
+          <div class="item item_flex-end">
+            <p class="item__city-name item__city-name_m-10">Алмата <span>314-226</span></p>
+            <svg class="item__arrow">
+              <use xlink:href="./resources/images/solid.svg#chevron-left"></use>
+            </svg>
+          </div>
+          <div class="item item_flex-end">
+            <p class="item__city-name item__city-name_m-10">Караганда <span>321-226</span></p>
+            <svg class="item__arrow">
+              <use xlink:href="./resources/images/solid.svg#chevron-left"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="aside">
+      <div class="logo-container">
+        <div class="logo">
+          <svg class="logo__icon">
+            <use xlink:href="../resources/images/sprite.svg#logo"></use>
+          </svg>
+          <h3 class="logo__text">
+             Siter<span>.kz</span></h3>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="box"><a class="link" href="">
+            <svg class="link__icon">
+              <use xlink:href="../resources/images/sprite.svg#logo"></use>
+            </svg><span>О нас</span></a></div>
+        <div class="box"><a class="link" href="">
+            <svg class="link__icon">
+              <use xlink:href="../resources/images/solid.svg#bars"></use>
+            </svg><span>Услуги</span></a></div>
+        <div class="box"><a class="link" href="">
+            <svg class="link__icon">
+              <use xlink:href="../resources/images/solid.svg#briefcase"></use>
+            </svg><span>Портфолио</span>
+            <svg class="link__icon-arrow">
+              <use xlink:href="./resources/images/solid.svg#chevron-right"></use>
+            </svg></a></div>
+        <div class="box"><a class="link" href="">
+            <svg class="link__icon">
+              <use xlink:href="../resources/images/solid.svg#mobile-alt"></use>
+            </svg><span>Контакты</span></a></div>
+        <div class="box"><a class="link" href="">
+            <svg class="link__icon">
+              <use xlink:href="../resources/images/solid.svg#pen-square"></use>
+            </svg><span>Оставить заявку</span></a></div>
+        <div class="box">
+          <div class="cityes cityes_pl-20" id="cityesVertical">
+            <div class="item active">
+              <svg class="item__icon-phone">
+                <use xlink:href="./resources/images/sprite.svg#phone"></use>
+              </svg>
+              <p class="item__city-name item__city-name_m-20 item__city-name_uppercase">Астана <span>696-226</span></p>
+              <svg class="item__arrow item__arrow_align-right">
+                <use xlink:href="./resources/images/solid.svg#chevron-right"></use>
+              </svg>
+            </div>
+            <div class="item item_flex-end">
+              <p class="item__city-name item__city-name_m-20 item__city-name_uppercase">Алмата <span>314-226</span></p>
+              <svg class="item__arrow item__arrow_align-right">
+                <use xlink:href="./resources/images/solid.svg#chevron-left"></use>
+              </svg>
+            </div>
+            <div class="item item_flex-end">
+              <p class="item__city-name item__city-name_m-20 item__city-name_uppercase">Караганда <span>321-226</span></p>
+              <svg class="item__arrow item__arrow_align-right">
+                <use xlink:href="./resources/images/solid.svg#chevron-left"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="button"><span class="button__icon-bg">
+            <svg class="button__icon">
+              <use xlink:href="./resources/images/solid.svg#play"></use>
+            </svg></span>
+          <p class="button__text">Showreel 2018 </p>
+        </div>
+      </div>
+    </div>
+    <script src="./all.js"></script>
   </body>
 </html>
