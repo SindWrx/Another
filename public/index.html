@@ -10,36 +10,36 @@
   <body>
     <header class="header">
       <div class="container container_align-right">
-        <div class="cityes cityes_p-0-20 cityes_w-300" id="cityesHorizontal">
-          <div class="item active item_flex-end">
+        <div class="cityes cityes_w300" id="cityesHorizontal">
+          <div class="item active item_flex-end item_p020">
             <svg class="item__icon-phone">
-              <use xlink:href="./resources/images/sprite.svg#phone"></use>
+              <use href="./resources/images/sprite.svg#phone"></use>
             </svg>
-            <p class="item__city-name item__city-name_m-10">Астана <span>696-226</span></p>
+            <p class="item__city-name item__city-name_m10">Астана <span>696-226</span></p>
             <svg class="item__arrow">
-              <use xlink:href="./resources/images/solid.svg#chevron-down"></use>
-            </svg>
-          </div>
-          <div class="item item_flex-end">
-            <p class="item__city-name item__city-name_m-10">Алмата <span>314-226</span></p>
-            <svg class="item__arrow">
-              <use xlink:href="./resources/images/solid.svg#chevron-left"></use>
+              <use href="./resources/images/solid.svg#chevron-down"></use>
             </svg>
           </div>
-          <div class="item item_flex-end">
-            <p class="item__city-name item__city-name_m-10">Караганда <span>321-226</span></p>
+          <div class="item item_flex-end item_p020">
+            <p class="item__city-name item__city-name_m10">Алмата <span>314-226</span></p>
             <svg class="item__arrow">
-              <use xlink:href="./resources/images/solid.svg#chevron-left"></use>
+              <use href="./resources/images/solid.svg#chevron-left"></use>
+            </svg>
+          </div>
+          <div class="item item_flex-end item_p020">
+            <p class="item__city-name item__city-name_m10">Караганда <span>321-226</span></p>
+            <svg class="item__arrow">
+              <use href="./resources/images/solid.svg#chevron-left"></use>
             </svg>
           </div>
         </div>
       </div>
     </header>
-    <div class="aside">
+    <aside class="aside">
       <div class="logo-container">
         <div class="logo">
           <svg class="logo__icon">
-            <use xlink:href="../resources/images/sprite.svg#logo"></use>
+            <use href="../resources/images/sprite.svg#logo"></use>
           </svg>
           <h3 class="logo__text">
              Siter<span>.kz</span></h3>
@@ -48,57 +48,201 @@
       <div class="menu">
         <div class="box"><a class="link" href="">
             <svg class="link__icon">
-              <use xlink:href="../resources/images/sprite.svg#logo"></use>
+              <use href="../resources/images/sprite.svg#logo"></use>
             </svg><span>О нас</span></a></div>
         <div class="box"><a class="link" href="">
             <svg class="link__icon">
-              <use xlink:href="../resources/images/solid.svg#bars"></use>
+              <use href="../resources/images/solid.svg#bars"></use>
             </svg><span>Услуги</span></a></div>
         <div class="box"><a class="link" href="">
             <svg class="link__icon">
-              <use xlink:href="../resources/images/solid.svg#briefcase"></use>
+              <use href="../resources/images/solid.svg#briefcase"></use>
             </svg><span>Портфолио</span>
             <svg class="link__icon-arrow">
-              <use xlink:href="./resources/images/solid.svg#chevron-right"></use>
+              <use href="./resources/images/solid.svg#chevron-right"></use>
             </svg></a></div>
         <div class="box"><a class="link" href="">
             <svg class="link__icon">
-              <use xlink:href="../resources/images/solid.svg#mobile-alt"></use>
+              <use href="../resources/images/solid.svg#mobile-alt"></use>
             </svg><span>Контакты</span></a></div>
-        <div class="box"><a class="link" href="">
+        <div class="box"><a class="link" id="modalButton" href="">
             <svg class="link__icon">
-              <use xlink:href="../resources/images/solid.svg#pen-square"></use>
+              <use href="../resources/images/solid.svg#pen-square"></use>
             </svg><span>Оставить заявку</span></a></div>
         <div class="box">
-          <div class="cityes cityes_pl-20" id="cityesVertical">
+          <div class="cityes cityes_pl20 cityes_height50" id="cityesVertical">
             <div class="item active">
               <svg class="item__icon-phone">
-                <use xlink:href="./resources/images/sprite.svg#phone"></use>
+                <use href="./resources/images/sprite.svg#phone"></use>
               </svg>
-              <p class="item__city-name item__city-name_m-20 item__city-name_uppercase">Астана <span>696-226</span></p>
+              <p class="item__city-name item__city-name_m20 item__city-name_uppercase">Астана <span>696-226</span></p>
               <svg class="item__arrow item__arrow_align-right">
-                <use xlink:href="./resources/images/solid.svg#chevron-right"></use>
-              </svg>
-            </div>
-            <div class="item item_flex-end">
-              <p class="item__city-name item__city-name_m-20 item__city-name_uppercase">Алмата <span>314-226</span></p>
-              <svg class="item__arrow item__arrow_align-right">
-                <use xlink:href="./resources/images/solid.svg#chevron-left"></use>
+                <use href="./resources/images/solid.svg#chevron-right"></use>
               </svg>
             </div>
-            <div class="item item_flex-end">
-              <p class="item__city-name item__city-name_m-20 item__city-name_uppercase">Караганда <span>321-226</span></p>
+            <div class="item item_offset">
+              <p class="item__city-name item__city-name_m20 item__city-name_uppercase">Астана <span>696-226</span></p>
               <svg class="item__arrow item__arrow_align-right">
-                <use xlink:href="./resources/images/solid.svg#chevron-left"></use>
+                <use href="./resources/images/solid.svg#chevron-left"></use>
+              </svg>
+            </div>
+            <div class="item item_offset">
+              <p class="item__city-name item__city-name_m20 item__city-name_uppercase">Алмата <span>314-226</span></p>
+              <svg class="item__arrow item__arrow_align-right">
+                <use href="./resources/images/solid.svg#chevron-left"></use>
+              </svg>
+            </div>
+            <div class="item item_offset">
+              <p class="item__city-name item__city-name_m20 item__city-name_uppercase">Караганда <span>321-226</span></p>
+              <svg class="item__arrow item__arrow_align-right">
+                <use href="./resources/images/solid.svg#chevron-left"></use>
               </svg>
             </div>
           </div>
         </div>
-        <div class="button"><span class="button__icon-bg">
+        <div class="button" id="videoButton"><span class="button__icon-bg">
             <svg class="button__icon">
-              <use xlink:href="./resources/images/solid.svg#play"></use>
+              <use href="./resources/images/solid.svg#play"></use>
             </svg></span>
           <p class="button__text">Showreel 2018 </p>
+        </div>
+      </div>
+      <div class="modal-curtain">
+        <div class="modal">
+          <svg class="modal__close">
+            <use href="./resources/images/solid.svg#times"></use>
+          </svg>
+          <h3 class="modal__header modal__header_mb55">Оставить заявку</h3>
+          <div class="modal-inner">
+            <div class="input input_mb20">
+              <input class="input__field" type="text" name="" placeholder="Иванов Сергей"/>
+              <svg class="input__icon">
+                <use href="./resources/images/solid.svg#user"></use>
+              </svg>
+            </div>
+            <div class="input input_mb20">
+              <input class="input__field" type="tel" name="" placeholder="+7 771 224 21 21"/>
+              <svg class="input__icon">
+                <use href="./resources/images/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            <div class="input input_mb20">
+              <input class="input__field" type="email" name="" placeholder="ivanov@mail.ru"/>
+              <svg class="input__icon">
+                <use href="./resources/images/solid.svg#user"></use>
+              </svg>
+            </div>
+            <p class="modal__hint modal__hint_align-left modal__hint_mb40">Поля отмеченные звездочкой ( <span class="modal__accent-text">*</span> ) , являются обязательными</p>
+            <button class="default-button default-button_m-auto default-button_sm">Отправить</button>
+          </div>
+        </div>
+      </div>
+      <div class="video-block">
+        <div class="video-curtain">
+          <svg class="video__close">
+            <use href="./resources/images/solid.svg#times"></use>
+          </svg>
+          <iframe class="video-block__frame" src="https://player.vimeo.com/video/248696949" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+      </div>
+    </aside>
+    <div class="blog">
+      <div class="navigation">
+        <div class="container container_mb30"><a class="link-back link-back_mr30" href="">
+            <svg class="link-back__icon">
+              <use href="./resources/images/sprite.svg#arrow"></use>
+            </svg>Главная</a><a class="link-back link-back_mb35" href="">
+            <svg class="link-back__icon">
+              <use href="./resources/images/sprite.svg#arrow"></use>
+            </svg>Блог</a>
+          <h2 class="navigation__page">Блог</h2>
+        </div>
+      </div>
+      <div class="container container_pt80">   
+        <h1 class="h1">Компания «siter.kz»</h1>
+        <p class="text">Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.</p>
+        <p class="text">Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.</p>
+        <p class="text">Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.</p>
+        <h2 class="h2 h2_mt30">Разработка сайтов</h2>
+        <p class="text">Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.</p>
+        <p class="text">Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.</p>
+        <h3 class="h3 h3_mt30">Индивидуальные решения</h3>
+        <p class="text">Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.</p>
+        <p class="text">Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.</p>
+        <h4 class="h4 h4_mt30">Заголовок h4</h4>
+        <p class="text">Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.</p>
+        <p class="text">Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.</p>
+        <h5 class="h5 h5_mt30">Заголовок h5</h5>
+        <p class="text">Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.</p>
+        <h6 class="h6 h6_mt30">Заголовок h6</h6>
+        <p class="text">Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.</p>
+        <div class="box box_col-2 box_mb50">
+          <div class="list-box-outer">
+            <h5 class="h5 h5_mt30 h5_offset-left20">Маркированный список:</h5>
+            <ul class="list-box list-box_checkers">
+              <svg class="list-box__item-icon">
+                <use href="./resources/images/sprite.svg#tick"></use>
+              </svg>
+              <li class="list-box__item list-box__item_mb30"><span class="list-box__text">Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.</span></li>
+              <svg class="list-box__item-icon">
+                <use href="./resources/images/sprite.svg#tick"></use>
+              </svg>
+              <li class="list-box__item list-box__item_mb30"><span class="list-box__text">Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.</span></li>
+              <svg class="list-box__item-icon">
+                <use href="./resources/images/sprite.svg#tick"></use>
+              </svg>
+              <li class="list-box__item"><span class="list-box__text">Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.</span></li>
+            </ul>
+          </div>
+          <div class="list-box-outer">
+            <h5 class="h5 h5_mt30 h5_offset-left20">Нумерованный список:</h5>
+            <ul class="list-box list-box_numbers list-box_blue-markers">
+              <li class="list-box__item list-box__item_mb30"><span class="list-box__text">Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.</span></li>
+              <li class="list-box__item list-box__item_mb30"><span class="list-box__text">Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.</span></li>
+              <li class="list-box__item"><span class="list-box__text">Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="link-outer link-outer_mx75"><a class="link-box link-box_mr50" href="#">
+            <svg class="link-box__icon">
+              <use href="./resources/images/sprite.svg#link"></use>
+            </svg><span class="link-box__text">ссылка</span></a><a class="link-box" href="">
+            <svg class="link-box__icon">
+              <use href="./resources/images/sprite.svg#link"></use>
+            </svg><span class="link-box__text">посещенная ссылка</span></a></div>
+        <div class="bg-box bg-box_gradient1 bg-box_w270 bg-box_mb20"><span class="bg-box__text">Выделенный текст</span></div>
+        <div class="bg-box bg-box_gradient2 bg-box_w270 bg-box_mb20"><span class="bg-box__text bg-box__text_dark">Выделенный текст</span></div>
+        <div class="bg-box bg-box_gradient1 bg-box_w500 bg-box_fat bg-box_center bg-box_mb90"><span class="bg-box__text bg-box__text_upper bg-box__text_fat">Важный выделенный текст</span></div>
+        <div class="btn-box-outer btn-box-outer_mb20">
+          <button class="default-button default-button_lg">Обычная кнопка</button>
+          <button class="default-button default-button_lg">Кнопка при наведении</button>
+          <button class="default-button default-button_lg default-button_mt10">Кнопка при нажатии</button>
+        </div>
+        <div class="btn-box-outer btn-box-outer_mb20">
+          <button class="default-button default-button_lg default-button_white">Обычная кнопка</button>
+          <button class="default-button default-button_lg">Кнопка при наведении</button>
+          <button class="default-button default-button_lg default-button_mt10">Кнопка при нажатии</button>
+        </div>
+        <div class="btn-box-outer">
+          <button class="default-button default-button_sm">Маленькая кнопка</button>
+          <button class="default-button default-button_sm">При наведении</button>
+          <button class="default-button default-button_sm">При нажатии</button>
+        </div>
+        <div class="text text_my30 text_semi-bold">при нажатии сдвиг на 1 px вниз</div>
+        <div class="btn-box-outer btn-box-outer_mb20">
+          <button class="default-button default-button_lg default-button_white default-button_radius">Обычная кнопка</button>
+          <button class="default-button default-button_lg default-button_radius">Кнопка при наведении</button>
+          <button class="default-button default-button_lg default-button_radius default-button_mt10">Кнопка при нажатии</button>
+        </div>
+        <div class="btn-box-outer btn-box-outer_mb20">
+          <button class="default-button default-button_lg default-button_radius">Обычная кнопка</button>
+          <button class="default-button default-button_lg default-button_radius">Кнопка при наведении</button>
+          <button class="default-button default-button_lg default-button_radius default-button_mt10">Кнопка при нажатии</button>
+        </div>
+        <div class="btn-box-outer">
+          <button class="default-button default-button_sm">Маленькая кнопка</button>
+          <button class="default-button default-button_sm">При наведении</button>
+          <button class="default-button default-button_sm">При нажатии</button>
         </div>
       </div>
     </div>

@@ -116,14 +116,14 @@ gulp.task('createMySprite', () => {
   // Собираем SVG спрайт
   .pipe(svgSprite({
     mode: {
-      symbol: { dest: '.', sprite: '../images/sprite.svg', inline: true },
-      css: {
-        dest: '.', prefix: '@mixin %s', sprite: '../images/spriteBg.svg', bust: false, dimensions: true,
-        render: { scss: { dest: 'sprite.scss' } }
-      }
+      symbol: { dest: '.', sprite: './resources/images/sprite.svg', inline: true },
+      // css: {
+      //   dest: '.', prefix: '@mixin %s', sprite: './resources/images/spriteBg.svg', bust: false, dimensions: true,
+      //   render: { scss: { dest: 'sprite.scss' } }
+      // }
     }
   }))
-  .pipe(gulpIf('*.scss', gulp.dest('./src'), gulp.dest(conf.dest + '/resources/images/')))
+  .pipe(gulpIf('*.scss', gulp.dest('./src'), gulp.dest(conf.dest + '/')))
   .pipe(browserSync.stream());
 });
 

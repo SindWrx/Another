@@ -1,2 +1,93 @@
-include ../../blocks/header/header.pug
-include ../../blocks/aside/aside.pug
+.blog
+  include ../../blocks/navigation/navigation
+  
+  .container.container_pt80    
+  
+    h1.h1 Компания «siter.kz»
+    p.text Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+    p.text Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
+    p.text Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.
+    h2.h2.h2_mt30 Разработка сайтов
+    p.text Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
+    p.text Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.
+    h3.h3.h3_mt30 Индивидуальные решения
+    p.text Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+    p.text Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
+    h4.h4.h4_mt30 Заголовок h4
+    p.text Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.
+    p.text Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
+    h5.h5.h5_mt30 Заголовок h5
+    p.text Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+    h6.h6.h6_mt30 Заголовок h6
+    p.text Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+
+    .box.box_col-2.box_mb50
+      .list-box-outer
+        h5.h5.h5_mt30.h5_offset-left20 Маркированный список:
+        ul.list-box.list-box_checkers
+          svg.list-box__item-icon
+            use(href="./resources/images/sprite.svg#tick")
+          li.list-box__item.list-box__item_mb30
+            span.list-box__text Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+          svg.list-box__item-icon
+            use(href="./resources/images/sprite.svg#tick")
+          li.list-box__item.list-box__item_mb30
+            span.list-box__text Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
+          svg.list-box__item-icon
+            use(href="./resources/images/sprite.svg#tick")
+          li.list-box__item
+            span.list-box__text Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.
+      .list-box-outer
+        h5.h5.h5_mt30.h5_offset-left20 Нумерованный список:
+        ul.list-box.list-box_numbers.list-box_blue-markers
+          li.list-box__item.list-box__item_mb30
+            span.list-box__text Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+          li.list-box__item.list-box__item_mb30
+            span.list-box__text Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
+          li.list-box__item
+            span.list-box__text Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.
+
+    .link-outer.link-outer_mx75
+      a.link-box.link-box_mr50(href="#")
+        svg.link-box__icon
+            use(href="./resources/images/sprite.svg#link")
+        span.link-box__text ссылка
+      a.link-box(href="")
+        svg.link-box__icon
+            use(href="./resources/images/sprite.svg#link")
+        span.link-box__text посещенная ссылка
+
+    .bg-box.bg-box_gradient1.bg-box_w270.bg-box_mb20
+      span.bg-box__text Выделенный текст
+    .bg-box.bg-box_gradient2.bg-box_w270.bg-box_mb20
+      span.bg-box__text.bg-box__text_dark Выделенный текст
+    .bg-box.bg-box_gradient1.bg-box_w500.bg-box_fat.bg-box_center.bg-box_mb90
+      span.bg-box__text.bg-box__text_upper.bg-box__text_fat Важный выделенный текст
+
+    .btn-box-outer.btn-box-outer_mb20
+      button.default-button.default-button_lg Обычная кнопка
+      button.default-button.default-button_lg Кнопка при наведении
+      button.default-button.default-button_lg.default-button_mt10 Кнопка при нажатии
+    .btn-box-outer.btn-box-outer_mb20
+      button.default-button.default-button_lg.default-button_white Обычная кнопка
+      button.default-button.default-button_lg Кнопка при наведении
+      button.default-button.default-button_lg.default-button_mt10 Кнопка при нажатии
+    .btn-box-outer
+      button.default-button.default-button_sm Маленькая кнопка
+      button.default-button.default-button_sm При наведении
+      button.default-button.default-button_sm При нажатии
+    .text.text_my30.text_semi-bold при нажатии сдвиг на 1 px вниз
+    .btn-box-outer.btn-box-outer_mb20
+      button.default-button.default-button_lg.default-button_white.default-button_radius Обычная кнопка
+      button.default-button.default-button_lg.default-button_radius Кнопка при наведении
+      button.default-button.default-button_lg.default-button_radius.default-button_mt10 Кнопка при нажатии
+    .btn-box-outer.btn-box-outer_mb20
+      button.default-button.default-button_lg.default-button_radius Обычная кнопка
+      button.default-button.default-button_lg.default-button_radius Кнопка при наведении
+      button.default-button.default-button_lg.default-button_radius.default-button_mt10 Кнопка при нажатии
+    .btn-box-outer
+      button.default-button.default-button_sm Маленькая кнопка
+      button.default-button.default-button_sm При наведении
+      button.default-button.default-button_sm При нажатии
+
+  

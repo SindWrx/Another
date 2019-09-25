@@ -2,20 +2,19 @@
 
 .cityes {
   color: $second;
-  fill: $second;
-  box-sizing: border-box;
+  fill: $second; 
   background-color: $first;
-
-  &_p-0-20 {
-    padding: 0 20px;
-  }
-
-  &_pl-20 {
+  
+  &_pl20 {
     padding-left: 20px;
   }
-
-  &_w-300 {
+  
+  &_w300 {
     width: 250px;
+  }
+  
+  &_height50 {
+    height: 50px;
   }
 }
 
@@ -24,27 +23,41 @@
   align-items: center;
   cursor: pointer;
   height: 50px;
-  box-sizing: border-box;
+  
   background-color: $first;
   position: relative;
 
-  span {
-    font-weight: 600;
+  &_flex-end {
+    justify-content: flex-end;
   }
 
-  .item__city-name {
+  &_p020 {
+    padding: 0 20px;
+  }
 
-    &_m-10 {
+  &_offset {
+    position: relative;
+    left: 230px;
+    top: -50px;
+  }
+
+  .item__city-name{
+
+    &_m10 {
       margin: 0 10px;
     }
-
-    &_m-20 {
+  
+    &_m20 {
       margin: 0 20px;
     }
-
+  
     &_uppercase {
       text-transform: uppercase;
     }
+  }
+
+  span {
+    font-weight: 600;
   }
 
   .item__arrow {
@@ -60,11 +73,12 @@
   .item__icon-phone {
     width: 16px;
     height: 16px;
+
+    &_mr10 {
+      margin-right: 10px;
+    }
   }
 
-  &_flex-end {
-    justify-content: flex-end;
-  }
 }
 
 .item:not(.active) {

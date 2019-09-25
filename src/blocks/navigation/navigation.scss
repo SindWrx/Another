@@ -1,0 +1,44 @@
+@import '../../main.scss';
+
+.navigation {
+  height: 210px;
+  background: url('./resources/images/navigation-bg.jpg') no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.link-back {
+  display: inline-flex;
+  align-items: center;
+  color: $second;
+  font-size: 14px;
+  text-decoration: none;
+
+  &_mb35{
+    margin-bottom: 35px;
+  }
+
+  &_mr30{
+    margin-right: 30px;
+  }
+
+  .link-back__icon {
+    width: 15px;
+    height: 15px;
+    fill: $second;
+    margin-right: 10px;
+  }
+
+  &:active{
+    text-decoration: underline;
+  }
+}
+
+.navigation__page {
+  color: $second;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 56px;
+}

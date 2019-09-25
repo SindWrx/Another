@@ -1,10 +1,9 @@
 @import '../../main';
 
 .aside {
-  position: absolute;
-  left: 0;
   background-color: $first;
   height: 1000vh;
+  width: 250px;
 
   .logo-container {
     margin-bottom: 50px;
@@ -79,7 +78,7 @@
   &__icon-bg {
     width: 25px;
     height: 25px;
-    box-sizing: border-box;
+
     background-color: $third;
     padding: 5px;
     border-radius: 12px;
@@ -96,6 +95,137 @@
   }
 }
 
-.item__icon-phone_mr-10 {
-  margin-right: 10px;
+.modal-curtain {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(52, 48, 55, .7);
+  display: none;
+  z-index: 1;
+
+  .modal {
+    width: 768px;
+    height: fit-content;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    position: absolute;
+    padding: 100px;
+    background-color: #f3f3f3;
+    margin: auto;
+    text-align: center;
+    display: none;
+    z-index: 2;
+  }
+
+  .modal-inner{
+    width: 280px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .modal__close {
+    position: absolute;
+    cursor: pointer;
+    top: 50px;
+    right: 65px;
+    width: 25px;
+    height: 25px;
+    fill: $first;
+    z-index: 3;
+  }
+
+  .modal__header {
+    font-size: 46px;
+    text-transform: uppercase;
+
+    &_mb55{
+      margin-bottom: 55px;
+    }
+  }
+  
+  .modal__hint{
+    color: #9b9b9b;
+    font-size: 14px;
+
+    &_align-left{
+      text-align: left;
+    }
+    
+    &_mb40{
+      margin-bottom: 40px;
+    }
+  }
+
+  .modal__accent-text{
+    color: $third;
+  }
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &_mb20{
+    margin-bottom: 20px;
+  }
+
+  .input__field {
+    padding: 10px 15px;
+    border: 1px solid #e6e6e6;
+    width: 100%;
+
+    &:focus {
+      outline: 0;
+      border-color: #9b9b9b;
+    }
+
+    &:focus+.input__icon {
+      fill: #9b9b9b;
+    }
+  }
+
+  .input__icon {
+    width: 15px;
+    height: 20px;
+    fill: #e6e6e6;
+    opacity: .5;
+    position: absolute;
+    right: 20px;
+  }
+}
+
+.video-curtain{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(52, 48, 55, .7);
+  display: none;
+  z-index: 1;
+}
+
+.video-block__frame{
+  display: none;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: 2;
+}
+
+.video__close {
+  position: absolute;
+  cursor: pointer;
+  top: 50px;
+  right: 65px;
+  width: 25px;
+  height: 25px;
+  fill: $second;
+  z-index: 3;
 }

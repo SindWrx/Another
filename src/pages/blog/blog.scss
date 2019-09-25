@@ -1,0 +1,280 @@
+@import '../../main.scss';
+
+.h1{
+  font-size: 56px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.h2{
+  font-size: 42px;
+  font-weight: 800;
+
+  &_mt30{
+    margin-top: 30px;
+  }
+}
+
+.h3{
+  font-size: 36px;
+  font-weight: 700;
+
+  &_mt30{
+    margin-top: 30px;
+  }
+}
+
+.h4{
+  font-size: 28px;
+
+  &_mt30{
+    margin-top: 30px;
+  }
+}
+
+.h5{
+  font-size: 22px;
+
+  &_mt30{
+    margin-top: 30px;
+  }
+
+  &_offset-left20{
+    margin-left: -20px; 
+  }
+}
+
+.h6{
+  font-size: 17px;
+
+  &_mt30{
+    margin-top: 30px;
+  }
+}
+
+.text{
+  line-height: 24px;
+
+  &_white{
+    color: #fff;
+  }
+
+  &_size15{
+    font-size: 15px;
+  }
+
+  &_accent{
+    color: $third;
+  }
+
+  &_my30{
+    margin: 30px 0;
+  }
+
+  &_size13{
+    font-size: 13px;
+  }
+
+  &_semi-bold{
+    font-weight: 600;
+  }
+}
+
+.box{
+  &_col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  &_mb50{
+    margin-bottom: 50px;
+  }
+}
+
+.list-box-outer{
+  padding-left: 20px;
+}
+
+.list-box{
+  padding: 0;
+  font-weight: 600;
+
+  &_blue-markers{
+    color: $fourth;
+  }
+
+  &_numbers{
+    list-style-type: decimal;
+  }
+
+  &_checkers{
+    list-style-type: none;
+  }
+
+  &__item-icon{
+    width: 20px;
+    height: 20px;
+    background-color: $fourth;
+    border-radius: 10px;
+    padding: 5px;
+    fill: $second;
+    position: absolute;
+    transform: translate(-100%, 10%);
+
+    &+.list-box__item{
+      padding-left: 10px;
+    }
+  }
+  
+  .list-box__item{
+    &_mb30{
+      margin-bottom: 30px;
+    }
+
+    .list-box__text{
+      color: $first;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
+
+.link-outer{
+  &_mx75{
+    margin-bottom: 75px;
+  }
+}
+
+.link-box{
+  color: $fourth;
+  fill: $fourth;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+
+  &_mr50{
+    margin-right: 50px;
+  }
+
+  &__icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  &__text{
+    font-size: 17px;
+    text-decoration: underline;
+  }
+
+  &:visited{
+    color: $visitedLink;
+  }
+}
+
+.bg-box{
+  padding: 15px 20px;
+  
+  &_mb20{
+    margin-bottom: 20px;
+  }
+  
+  &_mb90{
+    margin-bottom: 90px;
+  }
+
+  &_gradient1{
+    background: $gradient1;
+  }
+
+  &_gradient2{
+    background: $gradient2;
+  }
+
+  &_w270{
+    width: 270px;
+  }
+
+  &_w500{
+    width: 500px;
+  }
+
+  &_center{
+    text-align: center;
+  }
+
+  &__text{
+    color: $second;
+    font-weight: 600;
+
+    &_dark{
+      color: $first;
+    }
+
+    &_upper{
+      text-transform: uppercase;
+    }
+
+    &_fat{
+      font-weight: 900;
+    }
+  }
+}
+
+.btn-box-outer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 674px;
+
+  &_mb20{
+    margin-bottom: 20px;
+  }
+}
+
+.default-button{
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: $third;
+  color: $second;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  border: 0;
+  display: block;
+  cursor: pointer;
+
+  &_sm{
+    width: 210px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  &_lg{
+    width: 325px;
+    font-weight: 600;
+  }
+
+  &_radius{
+    border-radius: 30px;
+  }
+
+  &_mt10{
+    margin-top: 10px;
+  }
+
+  &_m-auto{
+    margin: auto;
+  }
+
+  &_white{
+    background-color: $second;
+    color: $third;
+    border: 3px solid $third;
+  }
+
+  &:focus{
+    outline: 0;
+  }
+}

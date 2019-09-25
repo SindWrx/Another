@@ -4,6 +4,15 @@ $first: #343037;
 $second: #fff;
 $third: #DC107E;
 $fourth: #3B91E6;
+$visitedLink: #78b5f0;
+$fifth: #E9C7D4; 
+
+$gradient1: linear-gradient(90deg, #3B91E6 0%, #7B5FC6 70%, transparent 100%);
+$gradient2: linear-gradient(90deg, #E9C7D4 0%, transparent 100%);
+
+*{
+  box-sizing: border-box;
+}
 
 html{
   color: $first;
@@ -15,17 +24,53 @@ h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
 
+/* Layout */
+
+body{
+  display: grid;
+  grid-template-rows: 50px auto;
+  grid-template-columns: 250px 1fr;
+  grid-template-areas: 
+  "header header"
+  "aside main"
+}
+
+header.header{
+  grid-area: header;
+}
+
+aside.aside{
+  grid-area: aside;
+}
+
 .container{
   width: 768px;
   margin: 0 auto;
   padding: 0 15px;
-  box-sizing: border-box;
-  position: relative;
+
+  &_align-right{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &_mb30{
+    margin-bottom: 30px;
+  }
+
+  &_pt80{
+    padding-top: 80px;
+  }
 }
 
-.container_align-right{
-  display: flex;
-  justify-content: flex-end;
+/* Шрифты */
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans.woff2') format('woff2'),
+      url('fonts/OpenSans.woff') format('woff'),
+  url('fonts/OpenSans.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
@@ -39,18 +84,18 @@ h1,h2,h3,h4,h5,h6{
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('fonts/OpenSans-Extrabold.woff2') format('woff2'),
-  url('fonts/OpenSans-Extrabold.woff') format('woff'),
-      url('fonts/OpenSans-Extrabold.ttf') format('ttf');
-  font-weight: 800;
+  src: url('fonts/OpenSans-Bold.woff2') format('woff2'),
+      url('fonts/OpenSans-Bold.woff') format('woff'),
+      url('fonts/OpenSans-Bold.ttf') format('ttf');
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('fonts/OpenSans.woff2') format('woff2'),
-      url('fonts/OpenSans.woff') format('woff'),
-  url('fonts/OpenSans.ttf') format('ttf');
-  font-weight: normal;
+  src: url('fonts/OpenSans-Extrabold.woff2') format('woff2'),
+  url('fonts/OpenSans-Extrabold.woff') format('woff'),
+      url('fonts/OpenSans-Extrabold.ttf') format('ttf');
+  font-weight: 800;
   font-style: normal;
 }
