@@ -1,280 +1,373 @@
 @import '../../main.scss';
 
-.h1{
-  font-size: 56px;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.h2{
-  font-size: 42px;
-  font-weight: 800;
-
-  &_mt30{
-    margin-top: 30px;
-  }
-}
-
-.h3{
-  font-size: 36px;
-  font-weight: 700;
-
-  &_mt30{
-    margin-top: 30px;
-  }
-}
-
-.h4{
-  font-size: 28px;
-
-  &_mt30{
-    margin-top: 30px;
-  }
-}
-
-.h5{
-  font-size: 22px;
-
-  &_mt30{
-    margin-top: 30px;
-  }
-
-  &_offset-left20{
-    margin-left: -20px; 
-  }
-}
-
-.h6{
-  font-size: 17px;
-
-  &_mt30{
-    margin-top: 30px;
-  }
-}
-
-.text{
-  line-height: 24px;
-
-  &_white{
-    color: #fff;
-  }
-
-  &_size15{
-    font-size: 15px;
-  }
-
-  &_accent{
-    color: $third;
-  }
-
-  &_my30{
-    margin: 30px 0;
-  }
-
-  &_size13{
-    font-size: 13px;
-  }
-
-  &_semi-bold{
-    font-weight: 600;
-  }
-}
-
-.box{
-  &_col-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
-  }
-
-  &_mb50{
-    margin-bottom: 50px;
-  }
-}
-
-.list-box-outer{
+.list-box-outer {
   padding-left: 20px;
 }
 
-.list-box{
+.list-box {
   padding: 0;
   font-weight: 600;
 
-  &_blue-markers{
+  &_blue-markers {
     color: $fourth;
   }
 
-  &_numbers{
+  &_numbers {
     list-style-type: decimal;
   }
 
-  &_checkers{
+  &_checkers {
     list-style-type: none;
   }
 
-  &__item-icon{
+  &__item-icon {
     width: 20px;
     height: 20px;
     background-color: $fourth;
     border-radius: 10px;
     padding: 5px;
-    fill: $second;
+    fill: $white;
     position: absolute;
     transform: translate(-100%, 10%);
 
-    &+.list-box__item{
+    &_check-black {
+      fill: #000;
+    }
+
+    &+.list-box__item {
       padding-left: 10px;
     }
   }
-  
-  .list-box__item{
-    &_mb30{
-      margin-bottom: 30px;
-    }
 
-    .list-box__text{
+  .list-box__item {
+
+    .list-box__text {
       color: $first;
       font-weight: 400;
       line-height: 24px;
+
+      &_white {
+        color: $white;
+      }
     }
   }
 }
 
-.link-outer{
-  &_mx75{
-    margin-bottom: 75px;
-  }
-}
-
-.link-box{
+.link-box {
   color: $fourth;
   fill: $fourth;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
 
-  &_mr50{
-    margin-right: 50px;
-  }
-
-  &__icon{
+  &__icon {
     width: 20px;
     height: 20px;
     margin-right: 10px;
   }
 
-  &__text{
+  &__text {
     font-size: 17px;
     text-decoration: underline;
   }
 
-  &:visited{
+  &:visited {
     color: $visitedLink;
   }
 }
 
-.bg-box{
+.gradient-box {
   padding: 15px 20px;
-  
-  &_mb20{
-    margin-bottom: 20px;
-  }
-  
-  &_mb90{
-    margin-bottom: 90px;
-  }
 
-  &_gradient1{
+  &_gradient1 {
     background: $gradient1;
   }
 
-  &_gradient2{
+  &_gradient2 {
     background: $gradient2;
   }
 
-  &_w270{
+  &_w270 {
     width: 270px;
   }
 
-  &_w500{
+  &_w500 {
     width: 500px;
   }
 
-  &_center{
+  &_center {
     text-align: center;
   }
 
-  &__text{
-    color: $second;
+  &__text {
+    color: $white;
     font-weight: 600;
 
-    &_dark{
+    &_dark {
       color: $first;
     }
 
-    &_upper{
+    &_upper {
       text-transform: uppercase;
     }
 
-    &_fat{
+    &_fat {
       font-weight: 900;
     }
   }
 }
 
-.btn-box-outer{
+.btn-box-outer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 674px;
-
-  &_mb20{
-    margin-bottom: 20px;
-  }
 }
 
-.default-button{
+.button {
   height: 50px;
   width: 100%;
   text-align: center;
-  background-color: $third;
-  color: $second;
+  background-color: $accent;
+  color: $white;
   text-transform: uppercase;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
   border: 0;
   display: block;
   cursor: pointer;
+  position: relative;
 
-  &_sm{
+  &_sm {
     width: 210px;
     font-weight: 400;
     font-size: 15px;
   }
 
-  &_lg{
+  &_lg {
     width: 325px;
     font-weight: 600;
   }
 
-  &_radius{
+  &_radius {
     border-radius: 30px;
   }
 
-  &_mt10{
-    margin-top: 10px;
-  }
-
-  &_m-auto{
+  &_m-auto {
     margin: auto;
   }
 
-  &_white{
-    background-color: $second;
-    color: $third;
-    border: 3px solid $third;
+  &_white {
+    background-color: $white;
+    color: $accent;
+    border: 3px solid $accent;
   }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.check {
+  display: flex;
+}
+
+.radio {
+  display: flex;
+}
+
+.option {
+  display: inline-flex;
+  align-items: center;
+
+  &_vtop {
+    align-items: flex-start;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__string {
+    display: block;
+    margin-top: 15px;
+  }
+
+  &__input {
+    display: none;
+
+    &_check {
+      &:checked+.option__item .option__tick {
+        visibility: visible;
+      }
+    }
+
+    &_radio {
+      &:checked+.option__item .option__dot {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__item {
+    width: 24px;
+    height: 24px;
+    border-width: 2px;
+    border-style: solid;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+
+    &_circle {
+      border-radius: 50%;
+    }
+
+    &_white {
+      border-color: $white;
+
+      .option__dot {
+        background-color: $white;
+      }
+
+      .option__tick {
+        fill: $white;
+      }
+
+      &+.option__title {
+        color: $white;
+      }
+    }
+  }
+
+  &__tick {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    display: block;
+    visibility: hidden;
+    fill: $accent;
+  }
+
+  &__dot {
+    display: block;
+    visibility: hidden;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: $accent;
+  }
+
+  &__title {
+    font-size: 15px;
+  }
+}
+
+.toogle {
+  width: 565px;
+  background: $gradient3;
+  padding: 40px 25px 25px 25px;
+}
+
+.accordeon {
+  border: 1px solid #ECECEC;
+
+  &__item {
+    border-left: 3px solid transparent;
+    cursor: pointer;
+  }
+
+  &__item:not(:last-child) {
+    border-bottom: 1px solid #ECECEC;
+  }
+
+  &__item:hover {
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.14);
+    border-left-color: $accent;
+  }
+}
+
+.accordeon-title {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+
+  &__icon {
+    width: 20px;
+    fill: #D1D1D1;
+    flex-shrink: 0;
+  }
+}
+
+.accordeon-content {
+  padding: 0 30px;
+  display: none;
+
+  &__text {
+    line-height: 22px;
+    margin: 0;
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+  }
+}
+
+.article {
+  &__img {
+    &_mt35 {
+      margin-top: 35px;
+    }
+  }
+}
+
+.message {
+
+  &-inner {
+    margin: 0 auto;
+
+    &_lg {
+      width: 580px;
+    }
+
+    &_sm {
+      width: 414px;
+    }
+  }
+
+  &__phone {
+    color: $white;
+    font-size: 45px;
+    padding: 20px 0px;
+    border: 3px solid $accent;
+    font-weight: 400;
+    text-align: center;
+
+    span {
+      font-weight: 800;
+    }
+  }
+}
+
+.textarea{
+  resize: none;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  padding: 10px 15px;
+  height: 100%;
 
   &:focus{
     outline: 0;
+    border-color: #9b9b9b;
   }
+}
+
+.box-col2{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 25px;
 }

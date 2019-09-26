@@ -2,7 +2,6 @@
 
 .aside {
   background-color: $first;
-  height: 1000vh;
   width: 250px;
 
   .logo-container {
@@ -19,12 +18,12 @@
   .logo__icon {
     width: 40px;
     height: 40px;
-    fill: $second;
+    fill: $white;
     margin-right: 10px;
   }
 
   .logo__text {
-    color: $second;
+    color: $white;
     font-weight: 400;
     text-transform: uppercase;
 
@@ -35,7 +34,7 @@
 }
 
 .link {
-  color: $second;
+  color: $white;
   text-transform: uppercase;
   text-decoration: none;
   display: flex;
@@ -44,20 +43,20 @@
   padding: 20px 25px 20px 20px;
 
   &:hover {
-    background-color: $third;
+    background-color: $accent;
   }
 
   &__icon {
     width: 20px;
     height: 20px;
-    fill: $second;
+    fill: $white;
     margin-right: 20px;
   }
 
   &__icon-arrow {
     width: 10px;
     height: 10px;
-    fill: $second;
+    fill: $white;
     position: absolute;
     right: 20px;
   }
@@ -67,9 +66,9 @@
   }
 }
 
-.button {
+.default-button {
   padding: 20px 25px;
-  color: $second;
+  color: $white;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -79,7 +78,7 @@
     width: 25px;
     height: 25px;
 
-    background-color: $third;
+    background-color: $accent;
     padding: 5px;
     border-radius: 12px;
     display: flex;
@@ -91,11 +90,11 @@
   &__icon {
     width: 10px;
     height: 10px;
-    fill: $second;
+    fill: $white;
   }
 }
 
-.modal-curtain {
+.modal-block__curtain {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -103,63 +102,56 @@
   background-color: rgba(52, 48, 55, .7);
   display: none;
   z-index: 1;
+}
 
-  .modal {
-    width: 768px;
-    height: fit-content;
-    top: 0; bottom: 0;
-    left: 0; right: 0;
-    position: absolute;
-    padding: 100px;
-    background-color: #f3f3f3;
-    margin: auto;
-    text-align: center;
-    display: none;
-    z-index: 2;
+.modal {
+  width: 768px;
+  height: fit-content;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  position: fixed;
+  padding: 100px;
+  background-color: #f3f3f3;
+  margin: auto;
+  text-align: center;
+  display: none;
+  z-index: 2;
+}
+
+.modal-inner{
+  width: 280px;
+  margin: auto;
+  text-align: center;
+}
+
+.modal__close {
+  position: absolute;
+  cursor: pointer;
+  top: 50px;
+  right: 65px;
+  width: 25px;
+  height: 25px;
+  fill: $first;
+  z-index: 3;
+}
+
+.modal__header {
+  font-size: 46px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.modal__hint{
+  color: #9b9b9b;
+  font-size: 14px;
+
+  &_align-left{
+    text-align: left;
   }
+}
 
-  .modal-inner{
-    width: 280px;
-    margin: auto;
-    text-align: center;
-  }
-
-  .modal__close {
-    position: absolute;
-    cursor: pointer;
-    top: 50px;
-    right: 65px;
-    width: 25px;
-    height: 25px;
-    fill: $first;
-    z-index: 3;
-  }
-
-  .modal__header {
-    font-size: 46px;
-    text-transform: uppercase;
-
-    &_mb55{
-      margin-bottom: 55px;
-    }
-  }
-  
-  .modal__hint{
-    color: #9b9b9b;
-    font-size: 14px;
-
-    &_align-left{
-      text-align: left;
-    }
-    
-    &_mb40{
-      margin-bottom: 40px;
-    }
-  }
-
-  .modal__accent-text{
-    color: $third;
-  }
+.modal__accent-text{
+  color: $accent;
 }
 
 .input {
@@ -167,10 +159,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-
-  &_mb20{
-    margin-bottom: 20px;
-  }
 
   .input__field {
     padding: 10px 15px;
@@ -184,6 +172,7 @@
 
     &:focus+.input__icon {
       fill: #9b9b9b;
+      opacity: 1;
     }
   }
 
@@ -197,7 +186,7 @@
   }
 }
 
-.video-curtain{
+.video-block__curtain{
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -226,6 +215,6 @@
   right: 65px;
   width: 25px;
   height: 25px;
-  fill: $second;
+  fill: $white;
   z-index: 3;
 }

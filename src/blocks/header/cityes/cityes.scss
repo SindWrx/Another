@@ -1,15 +1,11 @@
 @import '../../../main';
 
 .cityes {
-  color: $second;
-  fill: $second; 
+  color: $white;
+  fill: $white; 
   background-color: $first;
   
-  &_pl20 {
-    padding-left: 20px;
-  }
-  
-  &_w300 {
+  &_w250 {
     width: 250px;
   }
   
@@ -31,10 +27,6 @@
     justify-content: flex-end;
   }
 
-  &_p020 {
-    padding: 0 20px;
-  }
-
   &_offset {
     position: relative;
     left: 230px;
@@ -43,14 +35,6 @@
 
   .item__city-name{
 
-    &_m10 {
-      margin: 0 10px;
-    }
-  
-    &_m20 {
-      margin: 0 20px;
-    }
-  
     &_uppercase {
       text-transform: uppercase;
     }
@@ -73,12 +57,7 @@
   .item__icon-phone {
     width: 16px;
     height: 16px;
-
-    &_mr10 {
-      margin-right: 10px;
-    }
   }
-
 }
 
 .item:not(.active) {

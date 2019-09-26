@@ -12,22 +12,14 @@
 .link-back {
   display: inline-flex;
   align-items: center;
-  color: $second;
+  color: $white;
   font-size: 14px;
   text-decoration: none;
-
-  &_mb35{
-    margin-bottom: 35px;
-  }
-
-  &_mr30{
-    margin-right: 30px;
-  }
 
   .link-back__icon {
     width: 15px;
     height: 15px;
-    fill: $second;
+    fill: $white;
     margin-right: 10px;
   }
 
@@ -37,7 +29,7 @@
 }
 
 .navigation__page {
-  color: $second;
+  color: $white;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 56px;

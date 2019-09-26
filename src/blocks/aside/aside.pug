@@ -37,61 +37,62 @@ aside.aside
         span Оставить заявку
         
     .box
-      .cityes.cityes_pl20.cityes_height50#cityesVertical
+      .cityes.pl20.cityes_height50#cityesVertical
         .item.active
           svg.item__icon-phone
             use(href="./resources/images/sprite.svg#phone")
-          p.item__city-name.item__city-name_m20.item__city-name_uppercase Астана 
+          p.item__city-name.mx20.item__city-name_uppercase Астана 
             span 696-226
           svg.item__arrow.item__arrow_align-right
             use(href="./resources/images/solid.svg#chevron-right")
         .item.item_offset
-          p.item__city-name.item__city-name_m20.item__city-name_uppercase Астана 
+          p.item__city-name.mx20.item__city-name_uppercase Астана 
             span 696-226
           svg.item__arrow.item__arrow_align-right
             use(href="./resources/images/solid.svg#chevron-left")
         .item.item_offset
-          p.item__city-name.item__city-name_m20.item__city-name_uppercase Алмата 
+          p.item__city-name.mx20.item__city-name_uppercase Алмата 
             span 314-226
           svg.item__arrow.item__arrow_align-right
             use(href="./resources/images/solid.svg#chevron-left")
         .item.item_offset
-          p.item__city-name.item__city-name_m20.item__city-name_uppercase Караганда 
+          p.item__city-name.mx20.item__city-name_uppercase Караганда 
             span 321-226
           svg.item__arrow.item__arrow_align-right
             use(href="./resources/images/solid.svg#chevron-left")
 
-    .button#videoButton
-      span.button__icon-bg
-        svg.button__icon
+    .default-button#videoButton
+      span.default-button__icon-bg
+        svg.default-button__icon
           use(href="./resources/images/solid.svg#play")
-      p.button__text Showreel 2018 
+      p.default-button__text Showreel 2018 
 
-  .modal-curtain
+  .modal-block
+    .modal-block__curtain
     .modal
       svg.modal__close
         use(href="./resources/images/solid.svg#times")
-      h3.modal__header.modal__header_mb55 Оставить заявку
+      h3.modal__header.mb55 Оставить заявку
       .modal-inner
-        .input.input_mb20
+        .input.mb20
           input.input__field(type="text" name="" placeholder="Иванов Сергей")  
           svg.input__icon
             use(href="./resources/images/solid.svg#user")
-        .input.input_mb20
+        .input.mb20
           input.input__field(type="tel" name="" placeholder="+7 771 224 21 21")  
           svg.input__icon
             use(href="./resources/images/sprite.svg#phone")
-        .input.input_mb20
+        .input.mb20
           input.input__field(type="email" name="" placeholder="ivanov@mail.ru")  
           svg.input__icon
-            use(href="./resources/images/solid.svg#user")
-        p.modal__hint.modal__hint_align-left.modal__hint_mb40 Поля отмеченные звездочкой ( 
+            use(href="./resources/images/solid.svg#envelope")
+        p.modal__hint.modal__hint_align-left.mb40 Поля отмеченные звездочкой ( 
           span.modal__accent-text *
           |  ) , являются обязательными
-        button.default-button.default-button_m-auto.default-button_sm Отправить
+        button.button.button_m-auto.button_sm Отправить
 
   .video-block
-    .video-curtain
+    .video-block__curtain
       svg.video__close
         use(href="./resources/images/solid.svg#times")
       iframe.video-block__frame(src='https://player.vimeo.com/video/248696949', width='640', height='360', frameborder='0', allow='autoplay; fullscreen', allowfullscreen)
