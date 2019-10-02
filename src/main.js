@@ -1,4 +1,4 @@
-//import 'core-js/features/promise';
+import 'core-js/features/promise';
 import $ from 'jquery';
 require('slick-carousel');
 import {cityesHorizontal, cityesVertical} from './blocks/header/cityes/cityes';

@@ -2,7 +2,6 @@
 
 .aside {
   background-color: $first;
-  width: 250px;
 
   .logo-container {
     margin-bottom: 50px;
@@ -157,8 +156,9 @@
 .input {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
   position: relative;
+  width: 100%;
 
   .input__field {
     padding: 10px 15px;
@@ -183,6 +183,14 @@
     opacity: .5;
     position: absolute;
     right: 20px;
+    top: 11px;
+  }
+
+  &__error{
+    font-size: 14px;
+    color: $accent;
+    margin: 10px 0;
+    display: none;
   }
 }
 

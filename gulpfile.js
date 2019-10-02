@@ -21,6 +21,7 @@ const	svgmin = require('gulp-svgmin');
 const	cheerio = require('gulp-cheerio');
 const	replace = require('gulp-replace');
 const webpack = require('webpack-stream');
+const smartgrid = require('smart-grid');
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
@@ -49,6 +50,39 @@ let webConfig = {
   mode: isDevelopment ? 'development' : 'production',
   devtool: isDevelopment ? 'cheap-module-eval-source-map' : 'none'
 }
+
+var settings = {
+  outputStyle: 'scss', /* less || scss || sass || styl */
+  columns: 12, /* number of grid columns */
+  offset: '20px', /* gutter width px || % || rem */
+  mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
+  container: {
+      maxWidth: '1200px', /* max-width оn very large screen */
+      fields: '10px' /* side fields */
+  },
+  breakPoints: {
+      md: {
+          width: '768px',
+          fields: '15px' /* set fields only if you want to change container.fields */
+      },
+      xs: {
+          width: '320px',
+          columns: 4,
+          fields: '15px'
+      }
+      /* 
+      We can create any quantity of break points.
+
+      some_name: {
+          width: 'Npx',
+          fields: 'N(px|%|rem)',
+          offset: 'N(px|%|rem)'
+      }
+      */
+  }
+};
+
+smartgrid('./src', settings);
 
 /* Сборки */
 gulp.task('styles', () => {

@@ -1,9 +1,10 @@
 @import 'normalize';
+@import 'smart-grid';
 @import '../node_modules/slick-carousel/slick/slick.css';
 
 $first: #343037;
 $white: #fff;
-$accent: #DC107E;
+$accent: #DD1781;
 $fourth: #3B91E6;
 $visitedLink: #78b5f0;
 $fifth: #E9C7D4; 
@@ -29,53 +30,23 @@ h1,h2,h3,h4,h5,h6{
 /* Layout */
 
 body{
-  display: grid;
-  grid-template-rows: 50px auto;
-  grid-template-columns: 250px 1fr;
-  grid-template-areas: 
-  "header header"
-  "aside main"
+  display: flex;
 }
 
 header.header{
-  grid-area: header;
+  height: 50px;
 }
 
 aside.aside{
-  grid-area: aside;
+  width: 250px;
 }
 
-.container{
-  width: 768px;
-  margin: 0 auto;
-  padding: 0 15px;
-
-  &_align-right{
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-.box {
-  &_col-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
-  }
-
-  &_gray{
-    background-color: #f3f3f3;
-  }
-}
-
-.bg-box {
-  background: url('./resources/images/box-bg.jpg') no-repeat;
-  background-size: cover;
-  background-position-x: right;
+.content{
+  width: calc(100% - 250px);
 }
 
 .h1 {
-  font-size: 56px;
+  font-size: 55px;
   text-transform: uppercase;
   font-weight: 800;
 }
@@ -100,10 +71,6 @@ aside.aside{
 
 .h5 {
   font-size: 22px;
-
-  &_offset-left20 {
-    margin-left: -20px;
-  }
 
   &_white {
     color: $white;
@@ -213,6 +180,11 @@ aside.aside{
   margin-right: 20px;
 }
 
+.mx30 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 /* Margin Y */
 
 .my30{
@@ -265,6 +237,14 @@ aside.aside{
 
 /* Margin Bottom */
 
+.mb0{
+  margin-bottom: 0px;
+}
+
+.mb10{
+  margin-bottom: 10px;
+}
+
 .mb15{
   margin-bottom: 15px;
 }
@@ -314,7 +294,37 @@ aside.aside{
   padding-right: 20px;
 }
 
+.px30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.px50 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 /* Padding Y */
+
+.py10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.py30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.py35 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
 
 .py60 {
   padding-top: 60px;

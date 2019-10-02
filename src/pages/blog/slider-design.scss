@@ -1,6 +1,16 @@
 @charset 'UTF-8';
 @import '../../main.scss';
 
+.slider-box{
+  @include wrapper();
+}
+
+.slider-row{
+  @include row-flex();
+  @include size(10);
+  @include shift-left(1);
+}
+
 .container_slider-container{
   position: relative;
 }

@@ -3,4 +3,13 @@
 .header{
   background-color: $first;
   height: 50px;
+
+  &Wrapper{
+    @include wrapper();
+  }
+
+  &Row{
+    @include row-flex();
+    justify-content: flex-end;
+  }
 }
